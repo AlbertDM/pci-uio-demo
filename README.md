@@ -29,6 +29,49 @@ While this project focuses on a basic UIO-based driver, you can explore the foll
 - **DMA (Direct Memory Access)**: Learn about DMA for efficient data transfer between devices and memory.
 - **Performance Tuning**: Optimize your driver for maximum network throughput.
 
+## File structure
+
+```
+pci-uio-demo/
+|-- Makefile
+|-- README.md
+|-- LICENSE
+|-- src/
+|   |-- pci_uio_demo.c         # Main driver source code
+|   |-- pci_uio_demo.h         # Header file
+|-- examples/
+|   |-- Makefile
+|   |-- test_app.c             # Sample userspace application for testing the driver
+|-- scripts/
+|   |-- load_uio_module.sh     # Script to load the UIO module
+|   |-- unload_uio_module.sh   # Script to unload the UIO module
+|-- docs/
+|   |-- design.md              # Design and architecture documentation
+|   |-- usage.md               # Usage instructions
+|   |-- performance.md         # Performance tuning documentation
+|-- tests/
+|   |-- Makefile
+|   |-- test_cases/            # Directory for test cases
+|-- kernel_modules/            # Kernel modules (if needed)
+|-- lib/                       # Libraries (if needed)
+|-- config/                    # Configuration files (if needed)
+|-- other_files/               # Additional project files
+```
+
+    Makefile: The main Makefile for building your driver and any associated components.
+    README.md: Documentation for your project, as discussed earlier.
+    LICENSE: The license file for your project (e.g., MIT License).
+    src/: Directory containing your driver source code and header file.
+    examples/: If you plan to include example applications for testing, place them here.
+    scripts/: Scripts for loading and unloading the UIO module.
+    docs/: Documentation directory for design, usage, and performance documentation.
+    tests/: Directory for test cases (if you're planning to write tests).
+    kernel_modules/: If you need to develop additional kernel modules as part of your project, place them here.
+    lib/: If you need any libraries for your project, you can place them here.
+    config/: Configuration files (if needed).
+    other_files/: Any additional project-related files.
+    
+
 ## Contributing
 
 Contributions and improvements to this project are welcome. Feel free to open issues, submit pull requests, or suggest new features.
